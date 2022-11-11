@@ -1,36 +1,49 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-weight: 900;
-    font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 p {
     color: #8f8f8f;
 }
 
-.container-fluid {
-    padding: 3% 15% 7%;
+/* Headers */
+
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
-#title {
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Sections */
+
+.color-section {
     background-color: #ff4c68;
     color: #ffffff;
+}
+
+.white-section {
+    background-color: #fff;
 }
 
 /* Navigation Bar */
@@ -58,6 +71,13 @@ p {
     margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
 /* Title Image */
 .title-image {
     width: 60%;
@@ -69,16 +89,18 @@ p {
 .title-image-div {
     position: relative;
     min-height: 300px;
+    max-height: 600px;
 }
 
 /* Features */
 
 #features {
-    text-align: center;
-    padding: 5rem 0;
-    background-color: #fff;
-    padding: 3% 15%;
     position: relative;
+}
+
+.features-h3 {
+    font-size: 1.5rem;
+    line-height: 1.5;
 }
 
 .features-icon {
@@ -97,9 +119,13 @@ p {
 /* Testimonials Section */
 
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
+    position: relative;
+}
+
+.testimonials-h2 {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -108,14 +134,9 @@ p {
     margin: 1.5rem;
 }
 
-.carousel-item {
-    padding: 3% 15%;
-}
-
 /* Press Section */
 
 #press {
-    text-align: center;
     padding-bottom: 5%;
     background-color: #ef8172;
 }
@@ -127,9 +148,13 @@ p {
 
 /* Pricing Section */
 
-#pricing {
-    text-align: center;
-    padding: 3% 15%;
+.price-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.card-header {
+    font-size: 1.5rem;
 }
 
 .price-col {
@@ -138,4 +163,33 @@ p {
 
 .price-card {
     height: 100%;
+}
+
+/* Call to Action Section */
+
+/* Footer Section */
+
+#footer {
+    color: #8f8f8f;
+}
+
+.footerIcon {
+    padding: 2% 1%;
+}
+
+@media (max-width: 1175px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1800px) {
+    .title-image {
+        width: 55%;
+    }
 }
